@@ -1,5 +1,6 @@
 .headline {
   color: #826A0C;
+  font-size: 50px;
 }
 
 body  {
@@ -8,4 +9,10 @@ body  {
           -moz-background-size: cover;
           -o-background-size: cover;
           background-size: cover;
+}
+
+.info {
+  color: white;
+  text-align: center;
+  font-size: 40px;
 }
