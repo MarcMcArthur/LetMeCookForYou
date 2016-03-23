@@ -1,8 +1,10 @@
-<h1 class="headline">Let Me Cook For You</h1>
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<h1 class="info">Coming soon.........</h1>
+<% @cooks.each do |cook| %>
+  <div>
+    <h1><%= cook.name %></h1><br />
+    <i><%= cook.town %></i><br />
+    <p><%= cook.bio %></p><br />
+  </div>
+
+  <hr />
+
+<% end %>
