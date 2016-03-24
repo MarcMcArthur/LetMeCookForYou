@@ -7,4 +7,15 @@ class CooksController < ApplicationController
     @cooks = Cook.new
   end
 
+  def create
+    Cook.create(cook_params)
+    redirect_to root_path
+  end
+
+  private
+
+  def cook_params
+    params.require(:cook).permit(:name, :town, :bio)
+  end
+
 end
